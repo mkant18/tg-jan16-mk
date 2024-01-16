@@ -10,6 +10,7 @@ _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
+mysite/session.session
 vendor
 
 /env
