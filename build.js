@@ -9,14 +9,18 @@ db.serialize(function() {
       return;
     }
 
-    let html = '<html><body>';
+    // Read the template file
+    let template = fs.readFileSync('./mysite/template.html', 'utf8');
+
+    let messagesHtml = '';
 
     // Generate HTML for each message
     rows.forEach((row) => {
-      html += `<p>${row.content}</p>`;
+      messagesHtml += `<p>${row.content}</p>`;
     });
 
-    html += '</body></html>';
+    // Replace the placeholder in the template with the messages
+    let html = template.replace('{{messages}}', messagesHtml);
 
     // Save the generated HTML to a file
     fs.writeFileSync('index.html', html);
