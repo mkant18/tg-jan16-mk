@@ -1,0 +1,6 @@
+BEGIN:VCARD
+VERSION:4.0
+N:بنك فلسطين;;;;
+FN:بنك فلسطين 
+TEL;TYPE=cell;VALUE=uri:tel:+0593666666
+END:VCARD
