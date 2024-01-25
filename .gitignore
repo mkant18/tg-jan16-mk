@@ -9,6 +9,7 @@ lerna-debug.log*
 /env
 mysite/session.session
 .zip
+/media
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -131,6 +132,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+site/media
 site.zip
 site/media/29.pdf
 site/media/579.mp4
